@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bookings.css" />
     <title>Hotel Chuck Rock</title>
   </head>
   <body>
@@ -28,8 +29,24 @@
     </header>
 
     <main>
+      <div class="bookingsForm">
+        <form action="submit">
+          <legend id="legend">Book a Stay!</legend>
+          <label for="fName" class="tableData">First Name:</label>
+          <input type="text" class="tableData" id="fName" />
+          <label for="lName" class="tableData">Last Name:</label>
+          <input type="text" id="lName" class="tableData" />
+          <label for="email" class="tableData">Email:</label>
+          <input type="email" id="email" class="tableData" /><br />
+          <label for="startOfStay" class="tableData">Begin Stay:</label>
+          <input type="date" id="startOfStay" class="tableData" />
+          <label for="endOfStay" class="tableData">End Stay:</label>
+          <input type="date" id="endOfStay" class="tableData" />
+        </form>
+      </div>
+
       <div>
-        <form action=""></form>
+        <table id="bookingsTable"></table>
       </div>
 
       <footer>
